@@ -2,9 +2,9 @@ public class Curveball extends Ball
 {
     private int curve;
 
-    public Curveball(String type, int speed, int x, int y, int curve)
+    public Curveball(String type, String subtype, int speed, int x, int y, int curve)
     {
-        super(type, speed, x, y);
+        super(type, subtype, speed, x, y);
         this.curve = curve;
     }
 

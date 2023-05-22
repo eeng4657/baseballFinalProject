@@ -13,6 +13,13 @@ public class Game
 
     public void play()
     {
-        if (strikes != 3 && balls != 4){}
+        inning = 0;
+        while (inning <= 9)
+        {
+            while (outs < 3)
+            {
+                //
+            }
+        }
     }
 }
