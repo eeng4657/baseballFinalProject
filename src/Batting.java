@@ -3,14 +3,15 @@ public class Batting
     private int strikes;
     private int balls;
     private int outs;
-    private Batter[] offense;
+    private Batter current;
+    //private Batter[] offense;
 
-    public Batting(Batter[] offense)
+    public Batting(Batter current)
     {
-        this.offense = offense;
+        this.current = current;
     }
 
-    public void batting()
+    public void play()
     {
         strikes = 0;
         balls = 0;

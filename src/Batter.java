@@ -71,8 +71,8 @@ public class Batter
         return this.onBase;
     }
 
-    public void runningTheBases()
+    public void runningTheBases(int hit)
     {
-        this.onBase++;
+        this.onBase+=hit;
     }
 }

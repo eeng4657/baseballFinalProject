@@ -53,4 +53,9 @@ public class Pitcher
     {
         return this.homeRunsAllowed;
     }
+
+    public void pitch()
+    {
+        //
+    }
 }
