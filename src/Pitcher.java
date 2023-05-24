@@ -7,6 +7,8 @@ public class Pitcher
     private double ERA;
     private int walksAllowed;
     private int homeRunsAllowed;
+    private Ball currentPitch;
+    private String[][] pitches = {{"Four-seam", "Two-seam", "Cutter", "Splitter", "Forkball"},{"Curveball", "Slider", "Slurve", "Screwball"},{"Changeup", "Palmball", "Circle Changeup"}};
 
     public Pitcher(String name, int accuracy, int stability, int power, double ERA, int walksAllowed, int homeRunsAllowed)
     {
@@ -54,7 +56,17 @@ public class Pitcher
         return this.homeRunsAllowed;
     }
 
-    public void pitch()
+    public Ball getCurrentPitch()
+    {
+        return this.currentPitch;
+    }
+
+    public void setCurrentPitch(int a, int b)
+    {
+        this.currentPitch.setType(pitches[a][b]);
+    }
+
+    public void pitch(int a, int b)
     {
         //
     }
