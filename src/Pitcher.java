@@ -4,19 +4,19 @@ public class Pitcher
     private int accuracy;
     private int stability;
     private int power;
-    private double ERA;
+    private double earnedRuns;
     private int walksAllowed;
     private int homeRunsAllowed;
     private Ball currentPitch;
     private String[][] pitches = {{"Four-seam", "Two-seam", "Cutter", "Splitter", "Forkball"},{"Curveball", "Slider", "Slurve", "Screwball"},{"Changeup", "Palmball", "Circle Changeup"}};
 
-    public Pitcher(String name, int accuracy, int stability, int power, double ERA, int walksAllowed, int homeRunsAllowed)
+    public Pitcher(String name, int accuracy, int stability, int power, double earnedRuns, int walksAllowed, int homeRunsAllowed)
     {
         this.name = name;
         this.accuracy = accuracy;
         this.stability = stability;
         this.power = power;
-        this.ERA = ERA;
+        this.earnedRuns = earnedRuns;
         this.walksAllowed = walksAllowed;
         this.homeRunsAllowed = homeRunsAllowed;
     }
@@ -43,7 +43,7 @@ public class Pitcher
 
     public double getERA()
     {
-        return this.ERA;
+        return this.earnedRuns;
     }
 
     public int getwalksAllowed()
