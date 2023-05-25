@@ -75,4 +75,9 @@ public class Batter
     {
         this.onBase+=hit;
     }
+
+    public boolean hit(int mph, int x, int y) //pitch() method will set new values for currentPitch, then will have its getter methods called in this parameter, and based on rbis, home runs, method will determine if current Batter would hit the pitch, returns boolean stating whether Batter would make a hit, type of hit determined later
+    {
+        return false;
+    }
 }
