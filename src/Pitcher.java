@@ -56,21 +56,16 @@ public class Pitcher
         return this.homeRunsAllowed;
     }
 
-    /*public String getCurrentPitch()
+    public Ball getCurrentPitch()
     {
-        return this.currentPitch.getType();
-    }*/
+        return this.currentPitch;
+    }
 
-    /*public void setCurrentPitch(int a, int b)
+    public void pitch(int a, int b) //calculates speed, x and y position of pitch
     {
         this.currentPitch.setType(pitches[a][b]);
-    }*/
-
-    public void pitch(int a, int b) //calculates speed, x and y position of pitch, if works correctly, getCurrentPitch() and setCurrentPitch() will not be necessary
-    {
-        this.currentPitch.setType(pitches[a][b]);
-        //calculate x-pos of pitch, set CurrentPitch instance variable "x" to result
-        //calculate y-pos of pitch, set currentPitch instance variable "y" to result
+        //calculate x-pos of pitch, set CurrentPitch instance variable "x" to result, strike zone is 17 inches wide
+        //calculate y-pos of pitch, set currentPitch instance variable "y" to result, strike zone is 24 inches tall
         //calculate speed of pitch, set currentPitch instance variable "speed" to result
     }
 }
